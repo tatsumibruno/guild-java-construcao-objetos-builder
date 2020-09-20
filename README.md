@@ -141,16 +141,18 @@ public class Pagamento {
     }
 }
 ```
+
 Repare que as seguintes restrições são atendidas:
 * Um pagamento via boleto não poderá receber os dados de cartão de crédito
 * Um pagamento com cartão de crédito não poderá ter a informação do vencimento sendo informada
 Temos essas garantias acima restringidas em tempo de compilação, ou seja, um programador não conseguirá "quebrar" essas regras nem se quiser.
 
-##### Referências
-https://refactoring.guru/pt-br/design-patterns/builder
+<b>O fluent builder é uma solução bastante segura e útil, porém, o ponto negativo dessa abordagem é que fica bem mais verboso do que qualquer outra alternativa</b>
 
+<br/>
 
-###### Observação: O exemplo apresentado foi criado especificamente com o objetivo de demonstrar a utilização de métodos de fábrica estático e não estático. No mundo real é possível que as mesmas condições não se apliquem. O importante é entender o potencial dos métodos de fábrica para explicitar intenções e esconder detalhes de implementação para reduzir acoplamento para que então possa ser aplicado em seu cenário específico. 
+##### Referências:
+https://refactoring.guru/pt-br/design-patterns/builder 
   
      
 
