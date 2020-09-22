@@ -1,6 +1,5 @@
 package com.totvs.guild_java.construcao_objetos.builder.exemplo_comum;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -18,7 +17,7 @@ class PessoaTest {
                 .nome("João")
                 .nomeDaMae("Maria")
                 .nomeDoPai("José")
-                .sobrenome("Silva")
+                .sobrenome(null)
                 .build();
         assertEquals(LocalDate.of(1990, Month.MAY, 2), pessoa.getDataNascimento());
         assertEquals("123456", pessoa.getDocumento());

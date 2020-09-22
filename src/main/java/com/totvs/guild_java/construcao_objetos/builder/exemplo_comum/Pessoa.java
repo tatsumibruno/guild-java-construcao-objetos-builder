@@ -1,8 +1,11 @@
 package com.totvs.guild_java.construcao_objetos.builder.exemplo_comum;
 
+import lombok.NonNull;
+
 import java.time.LocalDate;
 
 public class Pessoa {
+    private Long id;
     private String nome;
     private String sobrenome;
     private LocalDate dataNascimento;
@@ -52,32 +55,32 @@ public class Pessoa {
         private PessoaBuilder() {
         }
 
-        public PessoaBuilder nome(String nome) {
+        public PessoaBuilder nome(@NonNull String nome) {
             this.nome = nome;
             return this;
         }
 
-        public PessoaBuilder sobrenome(String sobrenome) {
+        public PessoaBuilder sobrenome(@NonNull String sobrenome) {
             this.sobrenome = sobrenome;
             return this;
         }
 
-        public PessoaBuilder dataNascimento(LocalDate dataNascimento) {
+        public PessoaBuilder dataNascimento(@NonNull LocalDate dataNascimento) {
             this.dataNascimento = dataNascimento;
             return this;
         }
 
-        public PessoaBuilder documento(String documento) {
+        public PessoaBuilder documento(@NonNull String documento) {
             this.documento = documento;
             return this;
         }
 
-        public PessoaBuilder nomeDaMae(String nomeDaMae) {
+        public PessoaBuilder nomeDaMae(@NonNull String nomeDaMae) {
             this.nomeDaMae = nomeDaMae;
             return this;
         }
 
-        public PessoaBuilder nomeDoPai(String nomeDoPai) {
+        public PessoaBuilder nomeDoPai(@NonNull String nomeDoPai) {
             this.nomeDoPai = nomeDoPai;
             return this;
         }
