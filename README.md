@@ -1,8 +1,12 @@
 ## CONSTRUÇÃO DE OBJETOS
 Repositório com exemplos de códigos utilizados no workshop sobre boas práticas na construção de objetos.
 
+<br>
+
 ### Contextualização:
 No mundo da programação, quase tudo gira em torno de comunicação, escrever um bom código é primordial para ser fácil de se utilizar e manter. Com isso em mente, temos que minimizar ao máximo o risco de erros por conta de confusão no momento de evoluir o código fonte. Somando esse contexto às boas práticas de OOP, devemos sempre utilizar domínios com comportamento (evitar anti-pattern [AnemicDomainModel](https://www.martinfowler.com/bliki/AnemicDomainModel.html)). 
+
+<br>
 
 ### Builder
 Design pattern do tipo criacional utilizado para encapsular a construção de objetos complexos. 
